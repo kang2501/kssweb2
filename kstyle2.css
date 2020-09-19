@@ -126,6 +126,7 @@ div[class="slidebar"] div{
 }
 .video{
     text-align: center;
+    overflow: hidden;
 
 }
 .text1{
@@ -138,17 +139,17 @@ div[class="slidebar"] div{
     width: 100%;
  }  
  .photo1{
-    width: 50%;
+    width: 60%;
     position: relative;
     display: none;
     }
 .photo2{
-    width: 50%;
+    width: 70%;
     position: absolute;
     right: 0;
     display: none;
  }
- @media(max-width:700px){
+ @media(max-width:1000px){
     .photo1{
     width: 50%;
     position: relative;
@@ -157,10 +158,16 @@ div[class="slidebar"] div{
     .photo2{
     width: 50%;
     position: absolute;
-    right: 0;
+    right: 0%;
     display: inline-block;
+
+    
      }
     .photo3{
         display: none;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 } 
