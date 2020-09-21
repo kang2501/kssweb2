@@ -22,7 +22,7 @@ nextBtn.addEventListener('click',function(){
 });
 prevBtn.addEventListener('click',function(){
     if(currentIdx>0){
-        moveSlide(currentIdx+1);
+        moveSlide(currentIdx-1);
         console.log(currentIdx);
     }
     else{
