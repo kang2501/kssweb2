@@ -79,9 +79,9 @@
    </div>
    <div>
        <div>
-           <img class="photo1" src="IMG_6594.JPG">
-           <img class="photo2" src="IMG_6725.JPG">
-           <img class="photo3" src="IMG_8480.JPG">
+           <img class="photo1" src="img/IMG_6594.JPG">
+           <img class="photo2" src="img/IMG_6725.JPG">
+           <img class="photo3" src="img/IMG_8480.JPG">
        </div>
    </div>
    <div style="text-align: center;">
@@ -90,17 +90,17 @@
    </div>
    <div class="slide_wrapper">
        <ul class="slides">
-           <li><img class="imgsize" src="IMG_6425.JPG" alt=""></li>
-           <li><img class="imgsize" src="IMG_6442.JPG" alt=""></li>
-           <li><img class="imgsize" src="IMG_6466.JPG" alt=""></li>
-           <li><img class="imgsize" src="IMG_8745.JPG" alt=""></li>
-           <li><img class="imgsize" src="IMG_6427.JPG" alt=""></li>
-           <li><img class="imgsize" src="IMG_8718.JPG" alt=""></li>
-           <li><img class="imgsize" src="IMG_6449.JPG" alt=""></li>
-           <li><img class="imgsize"src="IMG_8751.JPG" alt=""></li>
-           <li><img class="imgsize" src="IMG_8753.JPG" alt=""></li>
-           <li><img class="imgsize"src="IMG_8749.JPG" alt=""></li>
-           <li><img class="imgsize"src="IMG_6725.JPG" alt=""></li>
+           <li><img class="imgsize" src="img/IMG_6425.JPG" alt=""></li>
+           <li><img class="imgsize" src="img/IMG_6442.JPG" alt=""></li>
+           <li><img class="imgsize" src="img/IMG_6466.JPG" alt=""></li>
+           <li><img class="imgsize" src="img/IMG_8745.JPG" alt=""></li>
+           <li><img class="imgsize" src="img/IMG_6427.JPG" alt=""></li>
+           <li><img class="imgsize" src="img/IMG_8718.JPG" alt=""></li>
+           <li><img class="imgsize" src="img/IMG_6449.JPG" alt=""></li>
+           <li><img class="imgsize"src="img/IMG_8751.JPG" alt=""></li>
+           <li><img class="imgsize" src="img/IMG_8753.JPG" alt=""></li>
+           <li><img class="imgsize"src="img/IMG_8749.JPG" alt=""></li>
+           <li><img class="imgsize"src="img/IMG_6725.JPG" alt=""></li>
       </ul>
     <p class="controls">
         <span class="prev">prev</span>
@@ -120,19 +120,19 @@
 
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="k1.JPG" style="width:100%">
+      <img src="img/k1.JPG" style="width:100%">
       <div class="text">Caption One</div>
     </div>
     
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="k2.jpg" style="width:100%">
+      <img src="img/k2.jpg" style="width:100%">
       <div class="text">Caption Two</div>
     </div>
     
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="k3.JPG" style="width:100%">
+      <img src="img/k3.JPG" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
     
@@ -161,6 +161,17 @@
 
 
 
+<div id="map" style="width:500px;height:400px;"></div>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ee58eea12821335f31694330a3457383."></script>
+<script>
+    var container = document.getElementById('map');
+    var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3
+    };
+
+    var map = new kakao.maps.Map(container, options);
+</script>
 <!--저작권-->
 <footer>
     <p>copyright KSS. All right reserved.</p>
